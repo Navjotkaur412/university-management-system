@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>University Course Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            🎓 UniPortal
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#courses">Courses</a>
+
+            <a href="#about">About</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="badge">
+                UNIVERSITY ACADEMIC PORTAL
+            </span>
+
+            <h1>
+                Explore Your
+                <span>Course Structure</span>
+            </h1>
+
+            <p>
+                Explore courses, semesters and subjects
+                through our university course portal.
+            </p>
+
+            <a href="#courses" class="hero-button">
+                Explore Courses ↓
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Statistics -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <div class="icon">🎓</div>
+
+            <h2 id="courseCount">0</h2>
+
+            <p>Available Courses</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="icon">📚</div>
+
+            <h2 id="semesterCount">0</h2>
+
+            <p>Total Semesters</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="icon">📖</div>
+
+            <h2 id="subjectCount">0</h2>
+
+            <p>Total Subjects</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Courses Section -->
+
+    <section class="courses-section" id="courses">
+
+        <div class="section-heading">
+
+            <span>ACADEMIC PROGRAMS</span>
+
+            <h2>Available Courses</h2>
+
+            <p>
+                Select a course to explore its semester-wise
+                subject structure.
+            </p>
+
+        </div>
+
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search course..."
+            >
+
+        </div>
+
+
+        <!-- Courses -->
+
+        <div id="courseContainer">
+
+            <div class="loading">
+                Loading courses...
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+
+    <section class="about" id="about">
+
+        <h2>About the Portal</h2>
+
+        <p>
+            This University Course Portal represents
+            course information in a structured format.
+            Course data is stored in MongoDB and retrieved
+            using Mongoose and Express.js.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            University Course Portal
+        </p>
+
+        <p>
+            Node.js • Express.js • MongoDB • Mongoose
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
