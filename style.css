@@ -390,6 +390,374 @@ nav {
 
 
 /* =========================
+   FORMS (Students & Courses)
+========================= */
+
+.form-card {
+
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    margin-bottom: 35px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.07);
+}
+
+
+.form-card h3 {
+
+    margin-bottom: 18px;
+
+    color: #111827;
+}
+
+
+.form-row {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 15px;
+}
+
+
+.form-row input,
+.form-row select {
+
+    flex: 1;
+
+    min-width: 160px;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    font-family: inherit;
+}
+
+
+.form-row input:focus,
+.form-row select:focus {
+
+    border-color: #2563eb;
+}
+
+
+.form-actions {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+
+.btn-primary {
+
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.btn-primary:hover {
+
+    background: #1d4ed8;
+}
+
+
+.btn-secondary {
+
+    padding: 12px 22px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #1e293b;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.btn-secondary:hover {
+
+    background: #f1f5f9;
+}
+
+
+.btn-danger {
+
+    padding: 8px 14px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #dc2626;
+
+    color: white;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.btn-danger:hover {
+
+    background: #b91c1c;
+}
+
+
+.btn-edit {
+
+    padding: 8px 14px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #d97706;
+
+    color: white;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    margin-right: 8px;
+
+    transition: 0.2s;
+}
+
+
+.btn-edit:hover {
+
+    background: #b45309;
+}
+
+
+/* Search box row now holds input + Add button */
+
+.search-box {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Semester builder inside course form */
+
+.semester-block {
+
+    background: #f8fafc;
+
+    border-left: 4px solid #2563eb;
+
+    border-radius: 9px;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+.semester-block-header {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+
+.semester-block-header input {
+
+    flex: 1;
+
+    padding: 10px 12px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+
+.subject-row {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 8px;
+}
+
+
+.subject-row input {
+
+    flex: 1;
+
+    padding: 9px 12px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 13px;
+}
+
+
+.small-btn {
+
+    padding: 8px 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #e2e8f0;
+
+    color: #1e293b;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+
+.small-btn:hover {
+
+    background: #cbd5e1;
+}
+
+
+.course-card-actions {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+
+/* Students Table */
+
+.table-wrapper {
+
+    background: white;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.07);
+
+    overflow-x: auto;
+}
+
+
+.data-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+.data-table th {
+
+    text-align: left;
+
+    padding: 16px 20px;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+}
+
+
+.data-table td {
+
+    padding: 14px 20px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    font-size: 14px;
+
+    color: #1e293b;
+}
+
+
+.data-table tr:last-child td {
+
+    border-bottom: none;
+}
+
+
+.data-table tr:hover td {
+
+    background: #f8fafc;
+}
+
+
+/* =========================
    ABOUT
 ========================= */
 

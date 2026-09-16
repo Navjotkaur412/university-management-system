@@ -30,6 +30,8 @@
 
             <a href="#home">Home</a>
 
+            <a href="#students">Students</a>
+
             <a href="#courses">Courses</a>
 
             <a href="#about">About</a>
@@ -104,6 +106,119 @@
 
         </div>
 
+
+        <div class="stat-card">
+
+            <div class="icon">🧑‍🎓</div>
+
+            <h2 id="studentCount">0</h2>
+
+            <p>Enrolled Students</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Students Section -->
+
+    <section class="courses-section" id="students">
+
+        <div class="section-heading">
+
+            <span>STUDENT RECORDS</span>
+
+            <h2>Manage Students</h2>
+
+            <p>
+                Add, edit and remove student records.
+                Data is stored in MongoDB via Mongoose.
+            </p>
+
+        </div>
+
+
+        <!-- Student Form -->
+
+        <div class="form-card">
+
+            <h3 id="studentFormTitle">Add Student</h3>
+
+            <form id="studentForm">
+
+                <input type="hidden" id="studentId">
+
+                <div class="form-row">
+
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Full Name"
+                        required
+                    >
+
+                    <input
+                        type="number"
+                        id="studentAge"
+                        placeholder="Age"
+                        required
+                    >
+
+                    <input
+                        type="text"
+                        id="studentCourse"
+                        placeholder="Course"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-actions">
+
+                    <button type="submit" class="btn-primary" id="studentSubmitBtn">
+                        Add Student
+                    </button>
+
+                    <button type="button" class="btn-secondary" id="studentCancelBtn" style="display:none;">
+                        Cancel
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <!-- Students Table -->
+
+        <div class="table-wrapper">
+
+            <table class="data-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Course</th>
+                        <th>Actions</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="studentTableBody">
+
+                    <tr>
+                        <td colspan="4" class="loading">Loading students...</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
     </section>
 
 
@@ -125,7 +240,7 @@
         </div>
 
 
-        <!-- Search -->
+        <!-- Search + Add -->
 
         <div class="search-box">
 
@@ -134,6 +249,61 @@
                 id="searchInput"
                 placeholder="Search course..."
             >
+
+            <button type="button" class="btn-primary" id="showCourseFormBtn">
+                + Add Course
+            </button>
+
+        </div>
+
+
+        <!-- Course Form -->
+
+        <div class="form-card" id="courseFormCard" style="display:none;">
+
+            <h3 id="courseFormTitle">Add Course</h3>
+
+            <form id="courseForm">
+
+                <input type="hidden" id="courseId">
+
+                <div class="form-row">
+
+                    <input
+                        type="text"
+                        id="courseName"
+                        placeholder="Course Name"
+                        required
+                    >
+
+                    <input
+                        type="text"
+                        id="courseDuration"
+                        placeholder="Duration (e.g. 4 Years)"
+                        required
+                    >
+
+                </div>
+
+                <div id="semesterList"></div>
+
+                <button type="button" class="btn-secondary" id="addSemesterBtn">
+                    + Add Semester
+                </button>
+
+                <div class="form-actions">
+
+                    <button type="submit" class="btn-primary" id="courseSubmitBtn">
+                        Add Course
+                    </button>
+
+                    <button type="button" class="btn-secondary" id="courseCancelBtn">
+                        Cancel
+                    </button>
+
+                </div>
+
+            </form>
 
         </div>
 
@@ -158,10 +328,9 @@
         <h2>About the Portal</h2>
 
         <p>
-            This University Course Portal represents
-            course information in a structured format.
-            Course data is stored in MongoDB and retrieved
-            using Mongoose and Express.js.
+           Our Student & Course Portal gives students, faculty, and administrative staff a single place to manage academic records. From here, students can be enrolled and tracked throughout their program, while course structures — including semesters and subjects — stay organized and easy to update as curricula evolve.
+
+Built for speed and simplicity, the portal keeps everything in sync in real time, so changes made to a student's record or a course's semester plan are reflected instantly across the system. Whether you're registering a new student or updating next semester's subject list, everything you need is just a few clicks away.
         </p>
 
     </section>
@@ -175,9 +344,6 @@
             University Course Portal
         </p>
 
-        <p>
-            Node.js • Express.js • MongoDB • Mongoose
-        </p>
 
     </footer>
 
